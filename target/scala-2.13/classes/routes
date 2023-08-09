@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+
+#----------------------------------------user Routes----------------------------------------------
+POST   /user/insertUser                 controllers.UserController.insertCustomer(request:Request)
+GET    /user/getUserById/:id            controllers.UserController.getUserById(id:String)
+POST   /user/checkIfValidLogin         controllers.UserController.checkIfValidLogin(request:Request)
+
+
+#----------------------------------------matches Routes----------------------------------------------
+POST   /match/insertMatch                 controllers.MatchController.insertMatch(request:Request)
+GET    /match/getMatchById/:id            controllers.MatchController.getMatchById(id:String)
+GET    /match/getAllMatches               controllers.MatchController.getAllMatches()
+
+
+
+#-----------------------------------------player Routes---------------------------------------------
+
+POST   /player/insertPlayer                              controllers.PlayerController.insertPlayer(request:Request)
+GET    /player/getPlayerById/:id                         controllers.PlayerController.getPlayerById(id:String)
+GET    /player/getPlayersForMatch/:country1/:country2    controllers.PlayerController.getPlayers(country1:String, country2:String)
+POST   /player/getSelectedPlayers                        controllers.PlayerController.getSelectedPlayers(request:Request)
+
+#----------------------------------------userTeam Routes----------------------------------------
+
+POST   /userTeam/insertUserTeam                 controllers.UserTeamController.insertUserTeam(request:Request)
+GET    /userTeam/getUserTeamById/:id            controllers.UserTeamController.getUserTeamById(id:String)
+
+#--------------------------------------teamSquad routes---------------------------------------
+POST   /teamSquad/insertTeamSquad                         controllers.TeamSquadController.insertTeamSquad(request:Request)
+GET    /teamSquad/getPlayersForMatch/:country1/:country2  controllers.TeamSquadController.getPlayersForMatch(country1:String, country2:String)
+
+#---------------------------------------contest rotes------------------------------------------
+POST   /contest/insertContest                  controllers.ContestController.insertContest(request:Request)
+GET    /contest/getContestById/:id             controllers.ContestController.getContestById(id:String)
+GET    /contest/getContestByMatchId/:matchId   controllers.ContestController.getContestsByMatchId(matchId:String)

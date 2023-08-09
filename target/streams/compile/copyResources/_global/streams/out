@@ -1,0 +1,4 @@
+[debug] Copy resource mappings: 
+[debug] 	(C:\Users\arsal\Music\players11Backend\conf\application.conf,C:\Users\arsal\Music\players11Backend\target\scala-2.13\classes\application.conf)
+[debug] 	(C:\Users\arsal\Music\players11Backend\conf\logback.xml,C:\Users\arsal\Music\players11Backend\target\scala-2.13\classes\logback.xml)
+[debug] 	(C:\Users\arsal\Music\players11Backend\conf\routes,C:\Users\arsal\Music\players11Backend\target\scala-2.13\classes\routes)

@@ -1,0 +1,9 @@
+[debug] > Exec(all {file:/C:/Users/arsal/Music/blue-bus/}root/products {file:/C:/Users/arsal/Music/blue-bus/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Exporting web-assets:blue-bus
+[debug] Exporting web-assets-test:blue-bus
+[success] Total time: 0 s, completed 8 Jan, 2023 10:07:30 AM
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
